@@ -1,0 +1,27 @@
+Q4-Test the following principles?
+
+Solution:
+1.If we declare an abstract method in a class then you must declare the class abstract as well.
+-->We cant have abstract method in concrete.
+-->If this rule was not made, then abstract methods would have got skipped to get defined at some places.
+
+2.Abstract Instantiation is creation of real instance of abstract/template.
+-->In simple words, creation of class, objects, process.
+-->Hence, Abstract class cannot be instantiated but it can be SUBCLASSED.
+-->These subclasses usually provides implementation for abstract methods in its parent class.
+
+3.If we do not override the abstract methods or classes in subclass then there will be a compilation error.
+-->We get an error saying,"subclass_name is not abstract and does not override abstractmethod_name in classname".
+-->Therefore, it is necessary for a subclass to override the abstract methods of a base class.
+
+4.If a method of class is private it cannot be accessed, not even from child classes.
+-->But, incase of an abstract method, you cannto use it from the same class, you need to override it from subclass and use.
+-->Therefore, abstract class cannot be private.
+
+5.If we declare a class abstract, to use, we must extend it.
+-->If we declare a class final we cannot extend it.
+-->Since both contradict with each other you cannot declare a class both final and abstract.
+If we do so, compile time error will be generated while debugg.
+
+6.Yes, we can declare an abstract class with no use of its methods(abstract) as abstract class meaans that
+hiding the implementation and showing the function definition to the user.
